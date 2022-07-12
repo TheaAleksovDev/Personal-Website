@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.png" type="image/icon type">
+    <title>Thea Aleksov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="page"></div>
+    <i class="fas fa-chevron-up" onclick="scrollToTop()" ></i>
+    <div class="header">
+        <div class="name">
+            <img class="logo" src="./logo.png" style="width:35px; margin-right:10px"  alt="">
+            <h2>Thea</h2>
+        </div>
+        <nav>
+            <a href="#" onclick="scrollToTop()" class="scroll-link">Home</a>
+            <a href="#about" class="scroll-link">About</a>
+            <a href="#skills" class="scroll-link">Skills</a>
+            <a href="#portfolio" class="scroll-link">Portfolio</a>
+            <a href="#contact" class="scroll-link">Contact</a>
+        </nav>
+    </div>
+    <section class="sections">
+        <section class="intro" id="home">
+            <h1>
+                Hello! </br>
+                <span>I’m</span>
+                    <a href="" class="typewrite" data-period="2000"
+                        data-type='[ "Thea", "Web Developer", "Web Designer", "Digital Artist","Freelancer" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+            <p class="undertitle">Through freelancing I help empower businesses in my community who lack </br>  an online presence and technological
+                expertise</p>
+            <button class="hire-btn"><a href="#contact" class="scroll-link">hire me</a></button>
+        </section>
+        <section class="about" id="about">
+            <h2>ABOUT ME</h2>
+            <p>
+                I’ve always been someone who has both a creative and a logical side. When I discovered web design, I realized it
+                would
+                be the perfect fit. I could use my creative side to design and my logical side to code. As a bonus, being both
+                designer
+                and developer allows me to make sure no detail is lost in translation. </br>
+                Other than sitting in front of my display
+                I enjoy
+                myself in playing tennis or drawing realistic portraits, traditionally(pen & paper) and digitally as well (Wacom Intuos S graphic table) ! Here is the link to my <a href="https://www.instagram.com/teadraws2/" target="_blank">Instagram</a>.
+            </p>
+
+            <p> I don’t like to define myself by the work I’ve done. I define myself by the work I want to do. Skills can be
+                taught,
+                personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that
+                matter.
+                I help designers, small agencies and businesses bring their ideas to life. Powered by VS Code and coffee, I turn
+                your
+                requirements into websites - on time and on budget.
+                I'm grateful that freelancing allows me to work from anywhere. I’m active on <a href="https://twitter.com/thea_codes" target="_blank">Twitter</a> where I share most of the
+                info
+                about my progress and upcoming projects.
+            </p>
+        </section>
+        <section class="skills" id="skills">
+            <h2>SKILLS</h2>
+            <div class="skill-bars">
+                <div class="html">
+                    <p>HTML</p>
+                    <div class="container">
+                        <div class="html-bar bar">
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="css">
+                    <p>CSS</p>
+                    <div class="container">
+                        <div class="css-bar bar">
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="js">
+                    <p>JavaScript</p>
+                    <div class="container">
+                        <div class="js-bar bar">
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ps">
+                    <p>Adobe Photoshop</p>
+                    <div class="container">
+                        <div class="ps-bar bar">
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="il">
+                    <p>Adobe Illustrator</p>
+                    <div class="container">
+                        <div class="il-bar bar">
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>PORTFOLIO</h2>
+            <p style="text-align: center;">COMING SOON...</p>
+        </section>
+        <section class="contact" id="contact">
+            <h2>CONTACT ME</h2>
+            <p>If you’d like to chat about a project or just have question, please fill in the form below, or contact me via my email <span id="mail">aleksov.tea@gmail.com</span></p>
+            <form action="https://formspree.io/f/mqknvgwn" method="POST">
+                <label id="lab">
+                    <input type="name" name="name" class="input name-inp" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" class="input email-inp" id="email" placeholder="Your Email" required>
+                </label>
+                <label>
+                    <textarea name="message" placeholder="Your Message" class="input message-inp" rows= 10 cols= 101 id="message" required></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <div class="form-btns">
+                    <button type="submit" id="submit-btn">Send</button>
+                    <button class="reset" onclick="form.reset()" class="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <p class="footer"><img src="./logo.png" class="footer-img" alt=""> Made by Thea Aleksov &copy;</p>
+
+        <div class="socials">
+            <a href="https://twitter.com/thea_codes" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/teadraws2/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/thea-aleksov-120252245/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+        </div>
+    </footer>
+    
+</body>
+<script src="./app.js"></script>
+</html>
