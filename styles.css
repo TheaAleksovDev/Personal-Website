@@ -418,4 +418,13 @@ html {
     .about{
         padding: 1.1rem;
     }
+    #name,
+    #email {
+        width: 37%;
+        height: 30px;
+    }
+
+    textarea {
+        width: 300px;
+    }
 }
