@@ -142,10 +142,10 @@ p{
     width: 90%;
 }
 .css-bar{
-    width: 80%;
+    width: 90%;
 }
 .js-bar {
-    width: 70%;
+    width: 80%;
 }
 .il-bar {
     width: 80%;
@@ -191,21 +191,13 @@ p a{
 form{
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
+    align-items: center;
+
 }
 .contact p{
     text-align: center;
 }
-form{
-    display: flex;
-    align-items: center;
-    width: 60vw;
-    width: 50%;
-    margin: 0 auto;
-}
+
 #lab{
     width: 700px;
     height: 40px;
@@ -218,6 +210,7 @@ form{
     padding-left: 3px;
 }
 #email{
+    padding: 3px 2px;
     width: 50%;
     margin-left: 2px;
     padding-left: 3px;
@@ -348,4 +341,78 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (min-width: 1200px)and (max-width: 1400px) {
+    .sections {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+}
+@media screen and (min-width: 1023px)and (max-width: 1200px) {
+    .sections {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+@media screen and (min-width: 768px)and (max-width: 1023px) {
+    .sections {
+            padding-left: 3rem;
+            padding-right: 3rem;
+    }
+    .skills{
+        padding: 5rem 5rem;
+        
+    }
+}
+@media screen and (min-width: 0px)and (max-width: 1023px) {
+    .sections {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .container-form{
+        width: 60%;
+    }
+    #name,
+    #email{
+        width: 50%;
+        height: 30px;
+    }
+    textarea{
+        width: 400px;
+    }
+    #lab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills{
+        padding: 3rem 3rem;
+        
+    }
+    .intro{
+        margin-left: 1rem;
+    }
+    .fas{
+        display: none;
+    }
+    form{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    #lab{
+        width: 400px;
+    }
+
+}
+@media screen and (min-width: 0px)and (max-width: 750px){
+    nav{
+        display: none;
+    }
+    .name{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
 }
